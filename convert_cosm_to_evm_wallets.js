@@ -58,7 +58,10 @@ async function GetWallets(wallets) {
 
 async function main() {
     try {
-        const walletsArray = await csvToArray('./sei.csv');
+        // const walletsArray = await csvToArray('.winners.csv');
+		const walletsArray = [
+// hard code wallets if needed
+		]
 		console.log("CSV converted into array. Querying EVM wallets!")
         await GetWallets(walletsArray);
     } catch (error) {
